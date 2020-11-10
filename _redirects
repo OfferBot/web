@@ -1,2 +1,1 @@
-/amazon/* url=:url :url
-/amazon /
+/amazon url=:url :url
