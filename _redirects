@@ -1,2 +1,2 @@
-/amazon/:id/:tag https://www.amazon.es/dp/:id/?tag=:tag
+/amazon/:url :url
 /amazon /
