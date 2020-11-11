@@ -1,1 +1,2 @@
 /amazon id=:id tag=:tag https://www.amazon.es/dp/:id/?tag=:tag
+/amazon/:id https://www.amazon.es/dp/:id/?tag=qchollos05-21
