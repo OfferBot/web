@@ -1,0 +1,19 @@
+- name: Informática
+  url: https://t.me/qchollosinformatica
+  icon: laptop
+
+- name: Gaming
+  url: https://t.me/qchollosinformatica
+  icon: gamepad
+
+- name: Juguetes
+  url: https://t.me/qchollosjuguetes
+  icon: puzzle-piece
+
+- name: Juegos de mesa
+  url: https://t.me/qchollosjuegosdemesa
+  icon: chess
+
+- name: Motor
+  url: https://t.me/qchollosmotor
+  icon: car
