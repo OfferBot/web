@@ -17,3 +17,7 @@
 - name: Motor
   url: https://t.me/qchollosmotor
   icon: car
+
+- name: IoT y domótica
+  url: https://t.me/qchollosiot
+  icon: network-wired
