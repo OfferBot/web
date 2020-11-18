@@ -1,2 +1,2 @@
 /amazon id=:id tag=:tag https://www.amazon.es/dp/:id/ref=nosim?tag=:tag
-/amazon/:id https://www.amazon.es/dp/:id/ref=nosim?tag=qchollos05-21
+/amazon/:id https://www.amazon.es/dp/:id/ref=nosim?tag=qchollos0b-21
