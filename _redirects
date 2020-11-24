@@ -1,2 +1,2 @@
-/amazon id=:id tag=:tag https://www.amazon.es/dp/:id/ref=nosim?tag=:tag&linkCode=ogi&th=1&psc=1
-/amazon/:id https://www.amazon.es/dp/:id/ref=nosim?tag=qchollos0b-21&linkCode=ogi&th=1&psc=1
+/amazon id=:id tag=:tag https://www.amazon.es/dp/:id?tag=:tag&linkCode=ogi&th=1&psc=1
+/amazon/:id https://www.amazon.es/dp/:id?tag=qchollos0b-21&linkCode=ogi&th=1&psc=1
