@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+
+		<div class="total-ads main-grid-border">
+			<div class="container">
+				<ol class="breadcrumb" style="margin-bottom: 5px;">
+					<li><a href="/">Home</a></li>
+					<li class="active">{{ page._name }}</li>
+				</ol>
+				<div class="ads-display">
+					<div class="wrapper">
+						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+							<div id="myTabContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+									<div>
+										<div id="container">
+											<div class="clearfix"></div>
+											<ul class="list">
+												{% for offer in site.data.offers.[page._name] %}
+													<li>
+														<img src="{{ offer.image }}" title="" alt="" />
+														<section class="list-left">
+															<h5 class="title">{{ offer.title }}</h5>
+															<span class="adprice">{{offer.price}}€ <span class="old-price">{{ offer.priceOld }}€</span></span>
+															<p class="catpath">
+																{{ offer.tags | join: " | " }}
+															</p>
+															<div>
+																<a href="https://qchollos.com/amazon/{{ offer.product_id }}" target="_blank" class="custom-btn">Ir al chollo</a>
+															</div>
+														</section>
+														<div class="clearfix"></div>
+													</li>
+												{% endfor %}
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		{% include footer.html%}
+	</body>
+
+</html>

@@ -1,23 +1,53 @@
 - name: Informática
   url: https://t.me/qchollosinformatica
   icon: laptop
+  color: green
+  section_slug: informatica
 
 - name: Gaming
   url: https://t.me/qchollosinformatica
   icon: gamepad
+  color: red
+  section_slug: gaming
 
 - name: Juguetes
   url: https://t.me/qchollosjuguetes
   icon: puzzle-piece
+  color: blue
+  section_slug: juguetes
 
 - name: Juegos de mesa
   url: https://t.me/qchollosjuegosdemesa
   icon: chess
+  color: yellow
+  section_slug: juegos-mesa
 
 - name: Motor
   url: https://t.me/qchollosmotor
   icon: car
+  color: purple
+  section_slug: motor
 
 - name: IoT y domótica
   url: https://t.me/qchollosiot
   icon: network-wired
+  color: brown
+  section_slug: iot
+
+- name: Bebé
+  url: https://t.me/qchollosbebe
+  icon: baby
+  color: orange
+  section_slug: bebe
+
+- name: Zapatillas
+  url: https://t.me/qcholloszapatillas
+  icon: shoe-prints
+  color: pink
+  section_slug: zapatillas
+
+- name: Impresión 3D
+  url: https://t.me/qchollosimpresion3d
+  icon: satellite-dish
+  color: gray
+  section_slug: impresion-3d
