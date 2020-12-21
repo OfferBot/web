@@ -21,3 +21,31 @@
 - name: IoT y domótica
   url: https://t.me/qchollosiot
   icon: network-wired
+
+- name: Zapatillas
+  url: https://t.me/qcholloszapatillas
+  icon: shoe-prints
+
+- name: Bebé
+  url: https://t.me/qchollosbebe
+  icon: baby
+
+- name: Impresión 3D
+  url: https://t.me/qchollosimpresion3d
+  icon: cubes
+
+- name: Snartphones y tablets
+  url: https://t.me/qchollosmoviles
+  icon: mobile-alt
+
+- name: Fútbol
+  url: https://t.me/qchollosfutbol
+  icon: futbol
+
+- name: Baloncesto
+  url: https://t.me/qchollosbaloncesto
+  icon: basketball-ball
+
+- name: Pádel
+  url: https://t.me/qchollospadel
+  icon: baseball-ball
