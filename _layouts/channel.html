@@ -1,3 +1,4 @@
+{% assign channel = site.data.channels | where: "name", page._name | first %}
 <!DOCTYPE html>
 <html>
 	{% include head.html %}
@@ -11,6 +12,9 @@
 					<li><a href="/">Home</a></li>
 					<li class="active">{{ page._name }}</li>
 				</ol>
+				<section class="telegram-channel">
+					¿Quieres más ofertas de {{ page._name }}? Suscríbete a nuestro <a href="{{ channel.url }}" target="_blank">canal de telegram</a>
+				</section>
 				<div class="ads-display">
 					<div class="wrapper">
 						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
@@ -18,22 +22,33 @@
 								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
 									<div>
 										<div id="container">
-											<div class="clearfix"></div>
 											<ul class="list">
 												{% for offer in site.data.offers.[page._name] %}
+													{% capture offerUrl %}https://qchollos.com/amazon/{{offer.product_id}}{% endcapture%}
 													<li>
-														<img src="{{ offer.image }}" title="" alt="" />
+														<div class="image">
+															<img src="{{ offer.image }}" title="" alt="" />
+														</div>
 														<section class="list-left">
-															<h5 class="title">{{ offer.title }}</h5>
-															<span class="adprice">{{offer.price}}€ <span class="old-price">{{ offer.priceOld }}€</span></span>
-															<p class="catpath">
-																{{ offer.tags | join: " | " }}
-															</p>
-															<div>
-																<a href="https://qchollos.com/amazon/{{ offer.product_id }}" target="_blank" class="custom-btn">Ir al chollo</a>
+															<div class="content">
+																<h5 class="title">{{ offer.title }}</h5>
+																<span class="adprice">{{offer.price}}€ <span class="old-price">{{ offer.priceOld }}€</span></span>
+																<p class="catpath">
+																	{{ offer.tags | join: " | " }}
+																</p>
+															</div>
+															<div class="action">
+																<a href="{{ offerUrl }}" target="_blank" class="custom-btn">Ir al chollo</a>
+																<div class="share-links" style="font-size: 1.4em; margin-top: 10px;">
+																	<span style="font-size: 0.8em;">Compártelo en</span>
+																	<a href="whatsapp://send?text={{ offer.title | url_encode }}%0A%0A{{ offerUrl }}" target="_blank"><i class="fab fa-whatsapp-square" style="color: #25d366;"></i></a>
+																	<a href="http://www.facebook.com/sharer.php?u={{ offerUrl | url_encode }}" target="_blank"><i class="fab fa-facebook" style="color: #3b5998;"></i></a>
+																	<a href="https://twitter.com/intent/tweet?url={{ offerUrl }}&text={{ offer.title | url_encode }}" target="_blank"><i class="fab fa-twitter" style="color: #00aced;"></i></a>
+																	<a href="tg://msg_url?text={{ offer.title | url_encode }}&url={{ offerUrl }}" target="_blank"><i class="fab fa-telegram" style="color: #0088cc;"></i></a>
+																	<br>
+																</div>
 															</div>
 														</section>
-														<div class="clearfix"></div>
 													</li>
 												{% endfor %}
 											</ul>
